@@ -15,6 +15,24 @@
         android:testOnly="false"
         android:theme="@style/Theme.KotlinDemo">
         <activity
+            android:name=".room.RoomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".datastore.DataStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".room.sqlite.SqliteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".savestate.SaveStateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".savestate.SaveStateHandlerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".viewmodel.ViewModelActivity"
+            android:exported="false" />
+        <activity
             android:name=".databinding.DataBindActivity"
             android:exported="false" />
         <activity
@@ -33,7 +51,7 @@
             android:name=".lifecyle.LifecycleActivity"
             android:exported="false" />
         <activity
-            android:name=".viewmodel.ViewModelActivity"
+            android:name=".workmanager.WorkManagerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

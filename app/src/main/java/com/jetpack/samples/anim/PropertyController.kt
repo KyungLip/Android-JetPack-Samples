@@ -130,26 +130,26 @@ class MyAnimExperiment {
 
 class MyAnimatorUpdateListener : ValueAnimator.AnimatorUpdateListener {
     private val TAG = "kylp"
-    override fun onAnimationUpdate(animation: ValueAnimator?) {
+    override fun onAnimationUpdate(animation: ValueAnimator) {
         Log.d(TAG, "动画更新中:${animation?.animatedValue}")
     }
 }
 
 class MyAnimatorListener : Animator.AnimatorListener {
     private val TAG = "kylp"
-    override fun onAnimationStart(animation: Animator?) {
+    override fun onAnimationStart(animation: Animator) {
         Log.d(TAG, "动画开始")
     }
 
-    override fun onAnimationEnd(animation: Animator?) {
+    override fun onAnimationEnd(animation: Animator) {
         Log.d(TAG, "动画结束")
     }
 
-    override fun onAnimationCancel(animation: Animator?) {
+    override fun onAnimationCancel(animation: Animator) {
         Log.d(TAG, "动画取消")
     }
 
-    override fun onAnimationRepeat(animation: Animator?) {
+    override fun onAnimationRepeat(animation: Animator) {
         Log.d(TAG, "动画重复")
     }
 
@@ -159,7 +159,7 @@ class MyAnimatorListener : Animator.AnimatorListener {
  * 动画监听器适配器模式
  */
 class MyAnimatorListenerAdapter : AnimatorListenerAdapter() {
-    override fun onAnimationStart(animation: Animator?) {
+    override fun onAnimationStart(animation: Animator) {
         super.onAnimationStart(animation)
     }
 }
