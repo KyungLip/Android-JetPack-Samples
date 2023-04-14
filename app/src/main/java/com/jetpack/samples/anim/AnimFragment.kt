@@ -12,7 +12,7 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.TextView
 import com.jetpack.samples.R
-import com.jetpack.samples.product.TimeView
+import com.jetpack.samples.widget.TimeView
 
 class AnimFragment : Fragment(), View.OnClickListener {
     private lateinit var mFlArea: FrameLayout

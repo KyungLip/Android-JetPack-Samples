@@ -28,7 +28,7 @@
         android:background="@android:color/holo_blue_light"
         android:gravity="center"
         android:text="Anim" />
-    <com.jetpack.samples.product.TimeView
+    <com.jetpack.samples.widget.TimeView
         android:id="@+id/tv_time"
         android:layout_width="50dp"
         android:layout_height="50dp"

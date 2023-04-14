@@ -1,4 +1,4 @@
-package com.jetpack.samples.product
+package com.jetpack.samples.widget
 
 import android.animation.ValueAnimator
 import android.content.Context
