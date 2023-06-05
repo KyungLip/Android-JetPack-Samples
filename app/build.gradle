@@ -30,13 +30,14 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    //开启视图绑定
+    //开启视图绑定 ViewBinding
     buildFeatures {
         viewBinding true
+        dataBinding true
     }
-    dataBinding {
-        enabled true
-    }
+//    dataBinding {
+//        enabled true
+//    }
 }
 
 dependencies {
@@ -103,14 +104,13 @@ dependencies {
 //    implementation("androidx.room:room-paging:$room_version")
 
     //WorkManager
-    dependencies {
-        def work_version = "2.8.0"
+    def work_version = "2.8.0"
 
-        // (Java only)
-        implementation("androidx.work:work-runtime:$work_version")
+    // (Java only)
+    implementation("androidx.work:work-runtime:$work_version")
 
-        // Kotlin + coroutines
-        implementation("androidx.work:work-runtime-ktx:$work_version")
+    // Kotlin + coroutines
+    implementation("androidx.work:work-runtime-ktx:$work_version")
 //
 //        // optional - RxJava2 support
 //        implementation("androidx.work:work-rxjava2:$work_version")
@@ -123,5 +123,4 @@ dependencies {
 //
 //        // optional - Multiprocess support
 //        implementation "androidx.work:work-multiprocess:$work_version"
-    }
 }

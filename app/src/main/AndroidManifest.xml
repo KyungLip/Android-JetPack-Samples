@@ -33,7 +33,7 @@
             android:name=".viewmodel.ViewModelActivity"
             android:exported="false" />
         <activity
-            android:name=".databinding.DataBindActivity"
+            android:name=".workmanager.WorkManagerActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -51,7 +51,7 @@
             android:name=".lifecyle.LifecycleActivity"
             android:exported="false" />
         <activity
-            android:name=".workmanager.WorkManagerActivity"
+            android:name=".databinding.DataBindActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
